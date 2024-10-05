@@ -1,10 +1,8 @@
-
-// console.log(document.getElementById("hamburger-button"))
 let hamburgerButton = document.getElementById("hamburger-button")
 let bookmark = document.getElementById("bookmark")
 let navbar = document.getElementById("navbar")
 let html = document.getElementsByName("html")
-let root = document.getElementsByTagName( 'html' )[0]; // '0' to assign the first (and only `HTML` tag)
+let root = document.getElementsByTagName( 'html' )[0];
 let closeButton = document.getElementById('close-button')
 let navbarElement = document.getElementsByClassName('nav-element')
 let socialMediaNav = document.getElementById("social-media-nav")
@@ -20,11 +18,9 @@ hamburgerButton.addEventListener("click", () => {
     hamburgerButton.style.display = 'none'
     bookmark.style.display = 'none'
 
-    //get current scroll position
     var xPosition = window.scrollX || window.pageXOffset || document.body.scrollLeft;
     var yPosition = window.scrollY || window.pageYOffset || document.body.scrollTop;
 
-    //disable scrolling
     window.onscroll = function() {
         window.scrollTo(xPosition, yPosition);
     };
@@ -64,31 +60,4 @@ function enableScroll() {
        
     };
 }
-
-
-/*
-
-//get current scroll position
-var xPosition = window.scrollX || window.pageXOffset || document.body.scrollLeft;
-var yPosition = window.scrollY || window.pageYOffset || document.body.scrollTop;
-
-//disable scrolling
-window.onscroll = function() {
-    window.scrollTo(xPosition, yPosition);
-};
-
-emt.animate({
-    left: "toggle",
-    top: "toggle",
-    width: "toggle",
-    height: "toggle"
-}, 500, function() {
-    //enable scrolling when animation is done
-    window.onscroll = function() {};
-});
-
-*/
-
-
-
 
