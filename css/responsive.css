@@ -404,6 +404,19 @@
         transform: scale(0.7);
     }
 
+    .features-image img {
+        transform: scale(0.7);
+    }
+
+    .features-image::before {
+        transform: scale(0.7);
+    }
+
+    .features-image::after {
+        scale: 0.7;
+        transform: translateX(-100%);
+    }
+
     .supported-navigator {
         height: 65vh;
         width: 70vw;
@@ -444,6 +457,24 @@
     #attribution {
         text-align: center;
     }
+
+    
+    #simple-bookmark-text {
+        margin-top: -5vh;
+    }
+
+    .card-text h1 {
+        font-size: 35px;
+    }
+
+    #frequently-asked a{
+        width: 90vw;
+    }
+
+    .card-text p {
+        font-size: 25px;
+    }
+
 }
 
 /* Iphone 12 */
@@ -459,10 +490,19 @@
         margin-top: 0;
     }
 
-    #simple-bookmark-text {
-        margin-top: -5vh;
-    }
+}
 
+@media screen and (max-height: 785px){
+    #hero-image {
+        margin-bottom: -10vh;
+    }
+}
+
+@media screen and (max-height: 675px){
+    #hero-image {
+        margin-bottom: -15vh;
+        scale: 0.8;
+    }
 }
 
 
